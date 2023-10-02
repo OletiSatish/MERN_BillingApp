@@ -1,0 +1,45 @@
+/* NewDataForm.css */
+
+.datacard {
+    border: 1px solid #ccc; /* Border around the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 30px 50px; /* Padding inside the card */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Box shadow for a raised effect */
+    background-color: #fff; /* Background color of the card */
+    width: 300px; /* Set the desired width of the card */
+    margin: 80px auto; /* Center the card horizontally */
+  }
+  
+  .input-container {
+    margin-top: 15px; /* Add some spacing between the title and inputs */
+  }
+  
+ .input-text, .input-number {
+    display: block; /* Display input as blocks */
+    margin-bottom: 10px; /* Add spacing between input elements */
+    width: 90%; /* Make input elements take the full width of the card */
+    padding: 10px; /* Add padding inside input elements */
+    border: 1px solid #ccc; /* Add a border to input elements */
+    border-radius: 4px; /* Rounded corners for input elements */
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center; /* Center the error message within the card */
+  }

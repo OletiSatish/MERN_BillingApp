@@ -1,0 +1,44 @@
+/* Billing.css */
+
+/* Container styles */
+.billing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(207, 23, 23, 0.1);
+  }
+  
+  /* Header styles */
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Total Bill styles */
+  .total-bill {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
