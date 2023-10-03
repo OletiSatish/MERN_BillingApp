@@ -13,7 +13,7 @@ function NewDataForm() {
   const sendDataToBackend = async () => {
     try {
       setLoading(true); // Set loading to true while sending the request
-      const response = await axios.post('http://localhost:8000/insert', { itemName, price });
+      const response = await axios.post('https://billing-application.onrender.com/insert', { itemName, price });
       
       if (response.status === 201) {
         navigate('/datatable');

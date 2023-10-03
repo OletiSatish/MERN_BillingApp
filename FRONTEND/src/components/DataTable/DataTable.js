@@ -15,7 +15,7 @@ function DataTable() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/allitems')
+      .get('https://billing-application.onrender.com/allitems')
       .then((response) => {
         if (Array.isArray(response.data.dataItems)) {
           setMongoData(response.data.dataItems);
