@@ -1,21 +1,15 @@
-const app = require("./app");
-const mongoose = require("mongoose");
-const dbUrl = require("./config/database");
-require('dotenv').config();
+const app = require('./app');
+const connectDB = require('./src/config/database');
+const dotenv = require('dotenv');
 
-const PORT = process.env.PORT || 8000;
+// Load environment variables
+dotenv.config();
 
-mongoose
-  .connect(dbUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Connected to MongoDB");
-    app.listen(PORT, () => {
-      console.log(`Server is Running at ${PORT}`);
-    });
-  })
-  .catch((error) => {
-    console.error("MongoDB connection error:", error);
-  });
+// Connect to the database
+connectDB();
+
+// Server listen
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
